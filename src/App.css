@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Container with gradient and background image */
+.loginbg {
+  position: relative;
+  width: 100%;
+  /* Adjust as needed */
+  height: 100vh;
+  /* Adjust as needed */
+  background:
+    linear-gradient(to top, #a8ecab, #f0f0f0),
+    /* Gradient overlay */
+    url('../src/assests/bg-image.png');
+  /* Background image */
+  background-size: cover;
+  /* Ensure the image covers the container */
+  background-position: center;
+  /* Center the image */
+}
+
+
+
+
+
+
+
+.awardsbg {
+  min-height: 100vh !important;
+  background-size: cover;
+  background: linear-gradient(to top, #a8ecab, #fff);
+}
+
+.dashboardbg {
+  min-height: 100vh;
+  background-image: url(../src/assests/bg-image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.text {
+  text-align: justify;
+}
+
+.borderbottom {
+  border-bottom: 3px solid #289b2c !important;
+}
+
+.btnbg {
+  background-color: #289b2c;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 11px;
+  /* Adjust width */
+  height: 12px;
+  /* Adjust height */
+  border-radius: 50%;
+  /* Make it circular */
+  background-color: #289b2c
+    /* Change to your desired color */
+
+}
+
+
+
+.content-container {
+  max-height: 42vh !important;
+  overflow-y: scroll;
+}
+
+.content-container1 {
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-container {
+  line-height: 2;
+  /* Increase line height for better readability */
+  color: #333;
+  /* Dark grey text for better contrast */
+  /* Add padding around the text */
+  background-color: #f9f9f9;
+  /* Light background for contrast */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+}
+
+.content-container p {
+  margin: 0;
+  /* Remove default margin */
+  text-align: justify;
+  /* Justify text for a neat alignment */
+}
+
+
+
+
+.navbarbg {
+  background-color: #f0f0f0;
+}
+
+.color {
+  color: #289b2c;
+}
+
+.bordergreen {
+  border: 2.5px solid #289b2c;
+}
+
+/* Base styles for images */
+.image1 {
+  height: 230px !important;
+  width: 80px !important;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image2 {
+  height: 230px !important;
+  width: 185px !important;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagedigital {
+  height: 225px;
+  width: 150px;
+}
+
+.imageisgf {
+  height: 225px;
+  width: 115px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .image1 {
+    height: 200px;
+    width: 100px;
+  }
+
+  .image2 {
+    height: 200px;
+    width: 160px;
+  }
+
+  .imagedigital {
+    height: 200px;
+    width: 130px;
+  }
+
+  .imageisgf {
+    height: 200px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .image1 {
+    height: 180px;
+    width: 90px;
+  }
+
+  .image2 {
+    height: 180px;
+    width: 140px;
+  }
+
+  .imagedigital {
+    height: 180px;
+    width: 110px;
+  }
+
+  .imageisgf {
+    height: 180px;
+    width: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .image1 {
+    height: 160px;
+    width: 80px;
+  }
+
+  .image2 {
+    height: 160px;
+    width: 120px;
+  }
+
+  .imagedigital {
+    height: 160px;
+    width: 100px;
+  }
+
+  .imageisgf {
+    height: 160px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .image1 {
+    height: 140px;
+    width: 70px;
+  }
+
+  .image2 {
+    height: 140px;
+    width: 100px;
+  }
+
+  .imagedigital {
+    height: 140px;
+    width: 90px;
+  }
+
+  .imageisgf {
+    height: 140px;
+    width: 70px;
+  }
+}
+
+
+
+.nav-link:hover {
+  color: white !important;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.image1:hover,
+.image2:hover {
+  animation: pulse 1s infinite;
+}
+
+
+
+
+
+
+
+
+.highlightrow {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.highlightrow {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn:focus,
+.btn.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+
+
+.imgs {
+  filter: brightness(70%);
+  /* Reduce brightness to 50% on hover */
+  transition: filter 0.3s ease;
+  /* Smooth transition over 0.3 seconds */
+}
+
+.imgs:hover {
+  filter: brightness(100%);
+  /* Reduce brightness to 100% on hover */
+  transition: filter 0.3s ease;
+  /* Smooth transition over 0.3 seconds */
+}
+
+.newsbg {
+  max-height: 70vh !important;
+  background-image: url(../src//assests/newsbg.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  max-height: 10px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #289b2c;
+  /* Color of the thumb when hovered */
+}
+
+
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.award.left {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+.award.right {
+  animation: slideInFromRight 1s ease-out;
+}
+
+.award.scale {
+  animation: scaleIn 0.75s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.awardsbg1 {
+  background-image: url();
+}
+
+.bg-teal {
+  background-color: #008080;
+}
+
+.bg-red {
+  background-color: #FF3632;
+}
+
+.bg-pink {
+  background-color: #ff608b;
+}
+
+.bg-orange {
+  background-color: #FF8800;
+}
+
+.bg-dark-yellow {
+  background-color: #EABF00;
+}
+
+.bg-light-yellow {
+  background-color: #FFFB2B;
+}
+
+.bg-light-green {
+  background-color: #61FF56;
+}
+
+.bg-dark-green {
+  background-color: #02CE08;
+}
+
+.bg-light-blue {
+  background-color: #3dd1ff;
+}
+
+.bg-dark-blue {
+  background-color: #2a88e0;
+}
+
+/* Intraday Table Scroll */
+.intraday-table {
+  max-height: 62vh !important;
+  overflow-y: scroll;
+}
+
+
+/* Week Ahead Table Scroll */
+
+.weekahead-table {
+  max-height: 62vh !important;
+  overflow-y: scroll;
+}
