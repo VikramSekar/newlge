@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/newlge/static/css/main.037c4b10.css",
+    "main.js": "/newlge/static/js/main.e3b340a6.js",
+    "static/js/453.2be7a6f0.chunk.js": "/newlge/static/js/453.2be7a6f0.chunk.js",
+    "static/media/webbg.png": "/newlge/static/media/webbg.75d0cca942a43b45d4d5.png",
+    "static/media/windgif1.gif": "/newlge/static/media/windgif1.d4dc34860f85da6e046a.gif",
+    "static/media/watergif1.gif": "/newlge/static/media/watergif1.1f783b95b6fd81a41440.gif",
+    "static/media/JuneReport.pdf": "/newlge/static/media/JuneReport.c4dc3d2531ea636900ce.pdf",
+    "static/media/treegif.gif": "/newlge/static/media/treegif.6b86abb42433daf7ae5d.gif",
+    "static/media/co2gif.gif": "/newlge/static/media/co2gif.1bb204fc101c0e15f2b9.gif",
+    "static/media/logo.png": "/newlge/static/media/logo.11799a33127d453f8634.png",
+    "static/media/iwef2023original.png": "/newlge/static/media/iwef2023original.942c039493dd64e5cbce.png",
+    "static/media/newsbg.jpg": "/newlge/static/media/newsbg.63dd58e79b15a93a5139.jpg",
+    "static/media/loginpageimage.jpg": "/newlge/static/media/loginpageimage.22a30515ccaa6a463ac2.jpg",
+    "static/media/iwef2024original.png": "/newlge/static/media/iwef2024original.95e2d150876c6e6a5a2b.png",
+    "static/media/ppt1.png": "/newlge/static/media/ppt1.b24eec1440c69f5f5921.png",
+    "static/media/isgf 2022.png": "/newlge/static/media/isgf 2022.ca4e792c15d3bad89bb3.png",
+    "static/media/ppt2.png": "/newlge/static/media/ppt2.9dbecd13b680b64461c0.png",
+    "static/media/iwef2021original.png": "/newlge/static/media/iwef2021original.4e1fb464a7023224ce94.png",
+    "static/media/iwef2024award.jpg": "/newlge/static/media/iwef2024award.cdd81b123bb1159a6600.jpg",
+    "static/media/bg-image.png": "/newlge/static/media/bg-image.68a6a05d37a58c97962f.png",
+    "static/media/digital week 2020.png": "/newlge/static/media/digital week 2020.ccfb6e2fffdf04443408.png",
+    "static/media/isgf2022award.jpg": "/newlge/static/media/isgf2022award.ff0eb5b4c21ee1f5b3eb.jpg",
+    "static/media/iwef2019.jpg": "/newlge/static/media/iwef2019.154711b84aa7250a0785.jpg",
+    "static/media/iwpa2021award.jpg": "/newlge/static/media/iwpa2021award.d3f0aa99d9ff1b614de0.jpg",
+    "static/media/iwef2019award.jpg": "/newlge/static/media/iwef2019award.36ea1f028b2001994c0d.jpg",
+    "static/media/iwef2021award.jpg": "/newlge/static/media/iwef2021award.20fb1012bc8f52bf6a49.jpg",
+    "static/media/iwef2023award.jpg": "/newlge/static/media/iwef2023award.89729a43ee35cd7b3252.jpg",
+    "static/media/service.png": "/newlge/static/media/service.e6a0e5f5f54b389f7e1a.png",
+    "static/media/iwef2020original.png": "/newlge/static/media/iwef2020original.8a6ccfcf1ebc9a884d60.png",
+    "static/media/userlogo.png": "/newlge/static/media/userlogo.33e7df0963941edbeb70.png",
+    "index.html": "/newlge/index.html",
+    "main.037c4b10.css.map": "/newlge/static/css/main.037c4b10.css.map",
+    "main.e3b340a6.js.map": "/newlge/static/js/main.e3b340a6.js.map",
+    "453.2be7a6f0.chunk.js.map": "/newlge/static/js/453.2be7a6f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.037c4b10.css",
+    "static/js/main.e3b340a6.js"
+  ]
+}
