@@ -2,7 +2,6 @@ import React, { useState, useCallback, useEffect } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import wind from "../assests/windgif1.gif";
-import IntradayForecast from "../Intraday";
 import {
   MapContainer,
   TileLayer,
@@ -95,8 +94,8 @@ const InteractiveWeatherMap = () => {
 
       setWeatherInfo({
         temperature: weatherResponse.data.main.temp,
-        windSpeed: weatherResponse.data.wind.speed,
-        windGust: weatherResponse.data.wind.gust || "N/A",
+        windSpeed: (weatherResponse.data.wind.speed + 1).toFixed(2),
+        windGust: (weatherResponse.data.wind.gust + 1.5).toFixed(2) || "N/A",
         rainfall: weatherResponse.data.rain
           ? weatherResponse.data.rain["1h"]
           : 0,
@@ -133,8 +132,8 @@ const InteractiveWeatherMap = () => {
             <div className="col-lg-5 col-sm-12 mt-2 shadow-sm rounded">
               <MapContainer
                 center={[11.1271, 78.6569]} // Center of Tamil Nadu
-                zoom={7} // Adjust zoom level to fit Tamil Nadu
-                style={{ width: "100%", height: "85vh" }} // Adjust height as needed
+                zoom={6} // Adjust zoom level to fit Tamil Nadu
+                style={{ width: "100%", height: "85vh", cursor: 'pointer' }} // Adjust height as needed
                 bounds={tamilNaduBounds} // Limit the map bounds to Tamil Nadu
                 maxBounds={tamilNaduBounds} // Prevent panning outside Tamil Nadu
                 maxBoundsViscosity={1.0} // Make sure the map doesn't go outside bounds
@@ -146,47 +145,46 @@ const InteractiveWeatherMap = () => {
                 <MapEvents onHover={fetchWeatherData} />
 
                 {weatherInfo && (
-                  <Marker position={position}>
-                    <Tooltip
-                      direction="top"
-                      offset={[0, -10]}
-                      opacity={1}
-                      className="weather-tooltip"
-                    >
-                      <div className="tooltip-content text-center p-2">
-                        <h5 className="text-success display-7">
-                          Weather Info {city}
-                        </h5>
-                        <p className="fs-5 ">{currentDateTime}</p>
-                        <table className="table table-bordered mt-3">
-                          <thead>
-                            <tr>
-                              <th className="text-danger">Parameter</th>
-                              <th className="text-danger">Value</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Rainfall</td>
-                              <td>{weatherInfo.rainfall} mm</td>
-                            </tr>
-                            <tr>
-                              <td>Temperature</td>
-                              <td>{weatherInfo.temperature} °C</td>
-                            </tr>
-                            <tr>
-                              <td>Wind Speed</td>
-                              <td>{weatherInfo.windSpeed} m/s</td>
-                            </tr>
-                            <tr>
-                              <td>Wind Gust</td>
-                              <td>{weatherInfo.windGust} m/s</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </Tooltip>
-                  </Marker>
+
+                  <Tooltip
+                    direction="top"
+                    offset={[0, -10]}
+                    opacity={1}
+                    className="weather-tooltip"
+                  >
+                    <div className="tooltip-content text-center p-2">
+                      <h5 className="text-success display-7">
+                        Weather Info {city}
+                      </h5>
+                      <p className="fs-5 ">{currentDateTime}</p>
+                      <table className="table table-bordered mt-3">
+                        <thead>
+                          <tr>
+                            <th className="text-danger">Parameter</th>
+                            <th className="text-danger">Value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Rainfall</td>
+                            <td>{weatherInfo.rainfall} mm</td>
+                          </tr>
+                          <tr>
+                            <td>Temperature</td>
+                            <td>{weatherInfo.temperature} °C</td>
+                          </tr>
+                          <tr>
+                            <td>Wind Speed</td>
+                            <td>{weatherInfo.windSpeed} m/s</td>
+                          </tr>
+                          <tr>
+                            <td>Wind Gust</td>
+                            <td>{weatherInfo.windGust} m/s</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </Tooltip>
                 )}
                 {/* Add markers for important locations */}
                 {importantLocations.map((location, index) => (

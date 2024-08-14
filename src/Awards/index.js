@@ -260,8 +260,8 @@ function Awards() {
                       ></button>
                     </div>
                     <div class="modal-body">
-                      <div className="row d-flex justify-content-center">
-                        <div className="col-md-5 text-center">
+                      <div className="row d-flex justify-content-center border rounded shadow-sm border-2">
+                        <div className="col-md-5 text-center ">
                           <img src={award4original} className="img-fluid" />
                         </div>
                       </div>

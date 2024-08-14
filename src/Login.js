@@ -13,7 +13,7 @@ import wind from "../src/assests/windgif1.gif";
 
 function Login({ }) {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [TodayWindGeneration, setTodayWindGeneration] = useState(99.37);
+  const [TodayWindGeneration, setTodayWindGeneration] = useState(7.76);
   const [targetco2, setCo2Value] = useState(0);
   const [watervalue, setWaterValue] = useState(0);
   const [treeValue, setTreeValue] = useState(0);
@@ -68,15 +68,17 @@ function Login({ }) {
       alert("Password must be at least 8 characters.");
       return;
     }
-
+    // Store email in session storage
+    sessionStorage.setItem('email', email);
     try {
       const response = await axios.post("http://localhost:5000/login", {
         email,
         password,
       });
-      // Pass email to the Dashboard
       navigate("/Dashboard", { state: { email } });
-    } catch (error) { }
+    } catch (error) {
+      console.error("Login error:", error);
+    }
   };
 
   return (
@@ -150,14 +152,14 @@ function Login({ }) {
                     </div>
                     <div className="col-6">
                       <h3 className="fs-4">{TodayWindGeneration} MU</h3>
-                      <p className="fs-5">July 18</p>
+                      <p className="fs-5">August 13</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-10 col-lg-4 mt-4">
+            <div class="col-md-10 col-lg-4 mt-4 mx-auto">
               <div class="card mb-0 ">
                 <div class="card-body p-3">
                   <h6 class="border-bottom pb-3">Proceed to Login</h6>

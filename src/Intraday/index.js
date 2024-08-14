@@ -90,8 +90,7 @@ function Intraday() {
         <div className="container">
           <div className="row d-flex justify-content-evenly">
             <div className="col-md-5 mt-3">
-              <div className="text-center mb-3">
-                {/* Button to toggle between hourly and 15-minute views */}
+              <div className="text-center mb-2">
                 <button
                   className="btn btnbg px-3 text-white shadow-sm"
                   onClick={() => setViewMode(viewMode === 'hourly' ? '15min' : 'hourly')}
@@ -100,15 +99,15 @@ function Intraday() {
                 </button>
               </div>
               <div className={`table-responsive ${viewMode === '15min' ? 'intraday-table' : ''}`}>
-                <table className="table table-bordered text-center">
-                  <thead className="bg-teal text-white">
+                <table className="table table-bordered text-center" >
+                  <thead className="bg-teal text-white sticky-top">
                     <tr>
                       {headers.map((header) => (
-                        <th className="text-uppercase" key={header}>{header}</th>
+                        <th className="text-uppercase " key={header}>{header}</th>
                       ))}
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody >
                     {data.map((item, index) => (
                       <tr key={index}>
                         {headers.map((header) => {
@@ -117,6 +116,7 @@ function Intraday() {
 
                           return (
                             <td
+                              className={`text-dark ${viewMode === 'hourly' ? 'p-0' : ''}`}
                               key={header}
                               style={{
                                 backgroundColor: header === 'date_time' ? '#f8f9fa' : (isNumeric ? getBackgroundColor(value) : 'transparent')
@@ -132,7 +132,7 @@ function Intraday() {
                 </table>
               </div>
             </div>
-            <div className="col-md-3 m-md-5  text-center">
+            <div className="col-md-3 m-md-4  text-center">
               <table className="table table-bordered text-center mt-4">
                 <thead className="bg-teal text-white">
                   <tr>

@@ -1,8 +1,6 @@
 import React from "react";
 import Header from "../Header";
 import junepdf from "../../src/assests/JuneReport.pdf";
-import junewind from "../assests/tnwind.png";
-
 import Footer from "../Footer";
 
 function NewsEvents({ file }) {
@@ -63,8 +61,8 @@ function NewsEvents({ file }) {
             </div>
             <div className="col-md-7 mt-5 mb-3">
               <div className="content-container p-3">
-                <h4 className="fs-5 text-success text-center">Wind Activity</h4>
-                <p>
+                <h4 className="fs-5 text-success text-center">Wind Activity June 2024</h4>
+                <p className="mt-3">
                   <span className="text-danger">cyclonic circulations</span>{" "}
                   over the North Indian Ocean. <br />
                   <br />
@@ -112,13 +110,9 @@ function NewsEvents({ file }) {
               </div>
             </div>
           </div>
-          {/* <div className="row d-flex justify-content-center align-items-center">
-            <div className="col-md-12 text-center content-container1">
-              <img src={junewind} className="img-fluid" />
-            </div>
-          </div> */}
+
         </div>
-      </section>
+      </section >
       <Footer />
     </>
   );

@@ -108,7 +108,7 @@ function Weekahead() {
               </div>
               <div className={`table-responsive ${viewMode === '15min' ? 'weekahead-table' : ''}`}>
                 <table className="table table-bordered text-center">
-                  <thead className="bg-teal text-white">
+                  <thead className="bg-teal text-white sticky-top">
                     <tr>
                       {headers.map((header) => (
                         <th className="text-uppercase" key={header}>{header}</th>
@@ -124,6 +124,7 @@ function Weekahead() {
 
                           return (
                             <td
+                              className={`text-dark ${viewMode === 'hourly' ? 'p-0' : ''}`}
                               key={header}
                               style={{
                                 backgroundColor: header === 'date_time' ? '#f8f9fa' : (isNumeric ? getBackgroundColor(value) : 'transparent')

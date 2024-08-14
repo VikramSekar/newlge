@@ -23,16 +23,43 @@
   /* Center the image */
 }
 
+.newloginbg {
+  min-height: 100vh;
+  background-image: url(../src/assests/webbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  border: 3px solid #ccfccc;
+}
 
+.newlogincontainer {
+  border: 3px solid #ccfccc;
+}
 
+.detailborder {
+  border: 2.5px solid #a8c5da;
+}
 
+.contactborder {
+  border: 2.5px solid #74a7d5;
+}
 
+.btnborder {
+  border: 2px solid #ccfccc;
 
+}
 
 .awardsbg {
   min-height: 100vh !important;
   background-size: cover;
   background: linear-gradient(to top, #a8ecab, #fff);
+}
+
+.lightbg {
+  /* background: linear-gradient(to top, #a8ecab, #ffffff); */
+  background: linear-gradient(to top, #d0f5d6, #ffffff);
+
+
 }
 
 .dashboardbg {
